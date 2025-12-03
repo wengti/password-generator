@@ -68,6 +68,8 @@ function generatePassword(){
     passwordBoxes.forEach( (elem) => {
         if (passwordLength>15) {
             elem.style.width = (passwordLength * ratio) + "px"
+        } else {
+            elem.style.width = "200px"
         }
     })
 }
