@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password Generator!</title>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+
+    <body>
+        <h1>Generate a random password</h1>
+        <h3>Never use an insecure password again.</h3>
+        
+
+        <p>Password length: </p>
+        <input type="number" id = "password-length-input" value="15">
+        <p>Password options: </p>
+        <input type="checkbox" id="number-flag", name="number-flag">
+        <label for="number-flag">Include number (0-9)</label>
+        <input type="checkbox" id="symbol-flag", name="symbol-flag">
+        <label for="symbol-flag">Include symbol</label>
+
+        <button class="btn" id="gen-btn">Generate passwords</button>
+
+        <div id="passwords-container">
+            <p class="password", id="password1"></p>
+            <p class="password", id="password2"></p>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
+
