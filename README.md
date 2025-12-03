@@ -2,9 +2,11 @@
 A simple password generator that generates 2 sets of passwords based on user-defined password length and characters.
 
 Landing page:
+
 ![Landing page](./images/landing-page.png)
 
 Once the password is generated:
+
 ![Generated password](./images/password-generated.png)
 
 ## Description
