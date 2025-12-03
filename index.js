@@ -57,6 +57,14 @@ function generatePassword(){
         }
         password.textContent = outputPassword
     }
+
+    // Dynamically change the width of the output box
+    let ratio = 200 / 15  // 200 pixel width for 15 words
+    passwords.forEach( (elem) => {
+        if (passwordLength>15) {
+            elem.style.width = (passwordLength * ratio) + "px"
+        }
+    })
 }
 
 

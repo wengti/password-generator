@@ -6,25 +6,36 @@
     </head>
 
     <body>
-        <h1>Generate a random password</h1>
-        <h3>Never use an insecure password again.</h3>
-        
+        <div id="content-container">
+            <h1>Generate a <span id="subtitle">random password</span></h1>
+            <p id="tagline">Never use an insecure password again.</p>
+            
+            <div id="generate-container">
+                <div id="password-option-container">
+                    <div id="password-length-container">
+                        <p>Password length: </p>
+                        <input type="text" id = "password-length-input" value="15">
+                    </div>
+                    
+                    <div id = "checkbox-container">
+                        <input class="check" type="checkbox" id="number-flag", name="number-flag">
+                        <label for="number-flag">Include number</label>
+                        <input class = "check" type="checkbox" id="symbol-flag", name="symbol-flag">
+                        <label for="symbol-flag">Include symbol</label>
+                    </div>
+                </div>
+                
 
-        <p>Password length: </p>
-        <input type="number" id = "password-length-input" value="15">
-        <p>Password options: </p>
-        <input type="checkbox" id="number-flag", name="number-flag">
-        <label for="number-flag">Include number (0-9)</label>
-        <input type="checkbox" id="symbol-flag", name="symbol-flag">
-        <label for="symbol-flag">Include symbol</label>
+                <button class="btn" id="gen-btn">Generate passwords</button>
+            </div>
+            
 
-        <button class="btn" id="gen-btn">Generate passwords</button>
+            <div id="passwords-container">
+                <div class="password", id="password1"></div>
+                <div class="password", id="password2"></div>
+            </div>
 
-        <div id="passwords-container">
-            <p class="password", id="password1"></p>
-            <p class="password", id="password2"></p>
         </div>
-
         <script src="index.js"></script>
     </body>
 </html>
