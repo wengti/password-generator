@@ -17,12 +17,17 @@ let numberFlag = document.getElementById("number-flag")
 let symbolFlag = document.getElementById("symbol-flag")
 
 // Get output password from HTML
-let passwords = document.querySelectorAll(".password")
+let passwords = document.querySelectorAll(".password p")
+let passwordBoxes = document.querySelectorAll(".password")
 
 
 // Make generated password as clickable copy button
 let tempCopyPassword = function() {
     copyPassword(this)
+    // document.querySelectorAll(".tooltip").forEach( (elem) => {
+    //     elem.textContent = "Copied"
+    // })
+    // console.log("should work")
 }
 
 passwords.forEach( (elem) => {
@@ -60,7 +65,7 @@ function generatePassword(){
 
     // Dynamically change the width of the output box
     let ratio = 200 / 15  // 200 pixel width for 15 words
-    passwords.forEach( (elem) => {
+    passwordBoxes.forEach( (elem) => {
         if (passwordLength>15) {
             elem.style.width = (passwordLength * ratio) + "px"
         }
